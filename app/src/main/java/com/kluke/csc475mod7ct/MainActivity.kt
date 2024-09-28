@@ -2,7 +2,6 @@ package com.kluke.csc475mod7ct
 
 import android.os.Bundle
 import android.util.Log
-import android.view.Gravity
 import android.view.View
 import android.widget.AdapterView
 import android.widget.ArrayAdapter

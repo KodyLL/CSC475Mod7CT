@@ -1,8 +1,6 @@
 package com.kluke.csc475mod7ct
 
-import kotlin.math.ceil
 import kotlin.math.round
-import kotlin.math.roundToLong
 
 class ConversionFormulas {
     fun FtoC(fromValue: Double): Double {

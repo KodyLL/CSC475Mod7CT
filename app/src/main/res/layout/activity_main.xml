@@ -15,7 +15,7 @@
         android:fontFamily="cursive"
         android:gravity="center"
         android:padding="10dp"
-        android:text="Unit Convertor!"
+        android:text="Temperature Convertor!"
         android:textSize="40dp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
