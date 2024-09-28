@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/appTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/purple"
+        android:fontFamily="cursive"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Unit Convertor!"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/fromSpinnerLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="13dp"
+        android:textSize="20dp"
+        android:text="From"
+        android:padding="5dp"
+        app:layout_constraintBottom_toTopOf="@+id/fromUnitsSpinner"
+        app:layout_constraintEnd_toEndOf="@+id/fromUnitsSpinner"
+        app:layout_constraintStart_toStartOf="@+id/fromUnitsSpinner">
+
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/toSpinnerLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="13dp"
+        android:text="To"
+        android:padding="5dp"
+        app:layout_constraintBottom_toTopOf="@+id/toUnitsSpinner"
+        app:layout_constraintEnd_toEndOf="@+id/toUnitsSpinner"
+        app:layout_constraintStart_toStartOf="@+id/toUnitsSpinner"
+        android:textSize="20dp">
+
+    </TextView>
+
+    <Spinner
+        android:id="@+id/fromUnitsSpinner"
+        android:layout_width="137dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="75dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appTitle"
+        android:textAlignment="center"
+        />
+
+    <Spinner
+        android:id="@+id/toUnitsSpinner"
+        android:layout_width="137dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="75dp"
+        android:layout_marginEnd="40dp"
+        android:clickable="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appTitle"
+        android:textAlignment="center"/>
+
+    <EditText
+        android:id="@+id/fromValue"
+        android:layout_width="165dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:ems="10"
+        android:hint="From Value"
+        android:textAlignment="center"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fromUnitsSpinner" />
+
+    <TextView
+        android:id="@+id/resultsUnit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Result Unit"
+        app:layout_constraintBottom_toBottomOf="@+id/resultField"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/resultField"
+        android:layout_marginBottom="10dp"/>
+
+    <EditText
+        android:id="@+id/resultField"
+        android:layout_width="165dp"
+        android:layout_height="wrap_content"
+
+        android:clickable="false"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:text="Result"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fromValue" />
+
+    <Button
+        android:id="@+id/calcButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:text="Calculate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/resultField" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
